@@ -1,0 +1,54 @@
+# Dataset images, downloaded archives and decoded caches; retain split evidence.
+/data/*
+!/data/splits/
+/checkpoints/
+*.pt
+*.pth
+*.ckpt
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+/tmp/
+*.tmp
+*.temp
+*.bak
+*.zip
+*.log
+# LaTeX intermediates and obsolete compiled report variants.
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+/report/compile-*.txt
+/report/main.pdf
+/report/main_revised.pdf
+/report/audit/pages/
+/report/audit/*.png
+/report/audit/pdf_text.txt
+/report/audit/evidence_readout.txt
+# Synthetic smoke figures are not final experiment results.
+/results/figures/smoke_*
+/results/confusion_matrices/smoke_*
+# PNG previews are redundant with the retained vector PDF figures.
+/results/figures/*.png
+/results/confusion_matrices/*.png
+
+# Alternate dataset locations (split metadata remains included).
+/EuroSAT/
+/EuroSAT_RGB/

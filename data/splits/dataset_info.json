@@ -1,0 +1,90 @@
+{
+  "total_images": 27000,
+  "num_classes": 10,
+  "classes": [
+    "AnnualCrop",
+    "Forest",
+    "HerbaceousVegetation",
+    "Highway",
+    "Industrial",
+    "Pasture",
+    "PermanentCrop",
+    "Residential",
+    "River",
+    "SeaLake"
+  ],
+  "class_counts": {
+    "AnnualCrop": {
+      "total": 3000,
+      "train": 2100,
+      "val": 450,
+      "test": 450
+    },
+    "Forest": {
+      "total": 3000,
+      "train": 2100,
+      "val": 450,
+      "test": 450
+    },
+    "HerbaceousVegetation": {
+      "total": 3000,
+      "train": 2100,
+      "val": 450,
+      "test": 450
+    },
+    "Highway": {
+      "total": 2500,
+      "train": 1750,
+      "val": 375,
+      "test": 375
+    },
+    "Industrial": {
+      "total": 2500,
+      "train": 1750,
+      "val": 375,
+      "test": 375
+    },
+    "Pasture": {
+      "total": 2000,
+      "train": 1400,
+      "val": 300,
+      "test": 300
+    },
+    "PermanentCrop": {
+      "total": 2500,
+      "train": 1750,
+      "val": 375,
+      "test": 375
+    },
+    "Residential": {
+      "total": 3000,
+      "train": 2100,
+      "val": 450,
+      "test": 450
+    },
+    "River": {
+      "total": 2500,
+      "train": 1750,
+      "val": 375,
+      "test": 375
+    },
+    "SeaLake": {
+      "total": 3000,
+      "train": 2100,
+      "val": 450,
+      "test": 450
+    }
+  },
+  "split_sizes": {
+    "train": 18900,
+    "val": 4050,
+    "test": 4050
+  },
+  "seed": 3150,
+  "manifest_sha256": "809e2be4de4883f540ddcf66eab6e9ef4d588b936ea2c587951a60626b555fad",
+  "split_sha256": {
+    "train_indices": "ac44fe4983f2fb2c890f86a50b885e8f0bef5bb7e218f552b65fc9a3fda670e8",
+    "val_indices": "9b42809398fe6b23af6fdee7503657e39b366059bd9299c1f620b0212e54382f",
+    "test_indices": "ae59898e623d89ac1701b98eddb1f7768924393ceef11a8c4d8f81e7f23838da"
+  }
+}

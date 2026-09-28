@@ -1,0 +1,5 @@
+model,total_parameters,trainable_parameters,conv_linear_macs,conv_linear_flops_2mac
+model_a,164962,164962,30967040,61934080
+model_b,22426,22426,6188288,12376576
+mobilenet_v2,2236682,2236682,24461312,48922624
+efficientnet_b0,4020358,4020358,31979392,63958784

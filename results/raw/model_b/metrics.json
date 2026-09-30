@@ -1,0 +1,21 @@
+{
+  "model": "model_b",
+  "total_parameters": 22426,
+  "trainable_parameters": 22426,
+  "conv_linear_macs": 6188288,
+  "conv_linear_flops_2mac": 12376576,
+  "model_size_bytes": 106591,
+  "model_size_kb": 104.0927734375,
+  "model_size_mb": 0.1016530990600586,
+  "avg_epoch_time_seconds": 3.6457370399776847,
+  "best_epoch": 23,
+  "epochs": 25,
+  "test_accuracy": 0.9414814814814815,
+  "macro_precision": 0.9400366910333711,
+  "macro_recall": 0.9388222222222222,
+  "cpu_latency_ms_mean": 1.7228459753096104,
+  "cpu_latency_ms_median": 1.5603499487042427,
+  "cpu_latency_ms_p95": 2.459454967174679,
+  "latency_repeats": 100,
+  "cpu_threads": 4
+}

@@ -1,0 +1,21 @@
+{
+  "model": "mobilenet_v2",
+  "total_parameters": 2236682,
+  "trainable_parameters": 2236682,
+  "conv_linear_macs": 24461312,
+  "conv_linear_flops_2mac": 48922624,
+  "model_size_bytes": 9179723,
+  "model_size_kb": 8964.5732421875,
+  "model_size_mb": 8.75446605682373,
+  "avg_epoch_time_seconds": 7.001696480042301,
+  "best_epoch": 10,
+  "epochs": 10,
+  "test_accuracy": 0.9730864197530864,
+  "macro_precision": 0.9720110530376969,
+  "macro_recall": 0.9720888888888888,
+  "cpu_latency_ms_mean": 8.452261993661523,
+  "cpu_latency_ms_median": 7.320700096897781,
+  "cpu_latency_ms_p95": 13.14331005560234,
+  "latency_repeats": 100,
+  "cpu_threads": 4
+}

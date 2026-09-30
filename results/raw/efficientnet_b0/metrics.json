@@ -1,0 +1,21 @@
+{
+  "model": "efficientnet_b0",
+  "total_parameters": 4020358,
+  "trainable_parameters": 4020358,
+  "conv_linear_macs": 31979392,
+  "conv_linear_flops_2mac": 63958784,
+  "model_size_bytes": 16362079,
+  "model_size_kb": 15978.5927734375,
+  "model_size_mb": 15.604094505310059,
+  "avg_epoch_time_seconds": 9.792653269972652,
+  "best_epoch": 8,
+  "epochs": 10,
+  "test_accuracy": 0.9681481481481482,
+  "macro_precision": 0.9671709067245592,
+  "macro_recall": 0.9671111111111111,
+  "cpu_latency_ms_mean": 12.453721996862441,
+  "cpu_latency_ms_median": 10.177650023251772,
+  "cpu_latency_ms_p95": 27.09174995543433,
+  "latency_repeats": 100,
+  "cpu_threads": 4
+}

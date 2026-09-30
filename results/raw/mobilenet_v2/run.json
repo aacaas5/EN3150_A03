@@ -1,0 +1,44 @@
+{
+  "model": "mobilenet_v2",
+  "run": "mobilenet_v2",
+  "seed": 3150,
+  "epochs": 10,
+  "batch_size": 128,
+  "optimizer": "adam",
+  "optimizer_settings": {
+    "lr": 0.001,
+    "momentum": 0.0
+  },
+  "head_epochs": 2,
+  "finetune_epochs": 8,
+  "stage_trainable_parameters": {
+    "head": 12810,
+    "finetune": 2236682
+  },
+  "best_epoch": 10,
+  "best_val_accuracy": 0.9750617283950618,
+  "best_val_loss": 0.08008369231297646,
+  "avg_epoch_time_seconds": 7.001696480042301,
+  "checkpoint": "checkpoints\\mobilenet_v2.pt",
+  "checkpoint_sha256": "386cdc86951fc55c81d435516a9cbcd000e93a1503d1f08daba80458aec080f4",
+  "initial_state_sha256": "abd284ce9a27c101d0c3d4f9582442e3405f3bef29d12e2b229b39b2f298e86d",
+  "split_sha256": {
+    "train_indices": "ac44fe4983f2fb2c890f86a50b885e8f0bef5bb7e218f552b65fc9a3fda670e8",
+    "val_indices": "9b42809398fe6b23af6fdee7503657e39b366059bd9299c1f620b0212e54382f",
+    "test_indices": "ae59898e623d89ac1701b98eddb1f7768924393ceef11a8c4d8f81e7f23838da"
+  },
+  "manifest_sha256": "809e2be4de4883f540ddcf66eab6e9ef4d588b936ea2c587951a60626b555fad",
+  "input_size": 64,
+  "normalization": "ImageNet",
+  "augmentation": "independent horizontal flip p=0.5",
+  "device": "cuda",
+  "device_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "torch": "2.13.0+cu130",
+  "torchvision": "0.28.0+cu130",
+  "python": "3.14.5",
+  "precision": "FP32",
+  "smoke": false,
+  "pretrained_weights": "IMAGENET1K_V2",
+  "total_parameters": 2236682,
+  "trainable_parameters": 2236682
+}

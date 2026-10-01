@@ -1,0 +1,8 @@
+# Install CUDA-enabled torch/torchvision first (see README), or use CPU wheels.
+torch==2.13.0
+torchvision==0.28.0
+numpy==2.5.2
+pandas==3.0.6
+scikit-learn==1.9.0
+matplotlib==3.11.1
+Pillow==12.3.0

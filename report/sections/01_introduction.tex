@@ -1,0 +1,11 @@
+\section{Introduction}
+CNNs learn local spatial features using shared convolution kernels \cite{lecun1998}.
+Edge image classification requires a balance between recognition quality,
+stored weights, computation and measured execution time. This study compares
+a standard CNN (Model A), a custom depthwise-separable CNN (Model B), and two
+ImageNet-pretrained lightweight networks on one fixed EuroSAT split. The central
+constraint is fewer than 100,000 trainable parameters for Model B.
+Experiments use PyTorch \cite{pytorch2019}; no test samples influence optimizer
+selection, training, or checkpoint selection. The goal is to determine which
+resources the custom sub-100k model saves and what accuracy cost is observed,
+then compare that trade-off with pretrained MobileNetV2 and EfficientNet-B0.

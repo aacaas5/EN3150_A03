@@ -1,0 +1,24 @@
+\appendix
+\section{Layer-wise Architecture Tables}
+\label{app:architectures}
+The alias \texttt{f} means \texttt{features}; \texttt{head} means
+\texttt{classifier}. Shapes include batch size one. Input/output shapes expose
+all channel counts. K/S/P denotes kernel/stride/padding; symmetric pairs use
+\texttt{x}. A dash denotes not applicable. All listed parameters are trainable.
+NCHW means batch, channels, height and width; thus each row gives input and
+output channel counts. A convolution has as many filters as output channels.
+ReLU rows show activation placement; convolution and linear entries have no
+implicit activation. BN denotes batch normalization
+and GAP denotes adaptive global average pooling. Model B depthwise convolutions
+use groups equal to input channels; its pointwise and all standard convolutions
+use one group. DWConv and PWConv denote depthwise and pointwise convolutions.
+Full names and groups are in the machine-readable architecture CSVs.
+\subsection{Model A}
+Table~\ref{tab:model_a_layers} gives the complete standard CNN, including
+normalization scales/offsets and the classifier bias in its parameter sum.
+\input{tables/model_a_layers}
+\clearpage
+\subsection{Model B}
+Table~\ref{tab:model_b_layers} gives the complete depthwise-separable CNN.
+The layer sum independently verifies the parameter budget.
+\input{tables/model_b_layers}

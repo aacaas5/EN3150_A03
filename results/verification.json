@@ -1,0 +1,694 @@
+{
+  "passed": true,
+  "report_required": true,
+  "checks": [
+    {
+      "check": "Exact 70/15/15 sample sizes",
+      "passed": true
+    },
+    {
+      "check": "Disjoint and exhaustive sample indices",
+      "passed": true
+    },
+    {
+      "check": "Manifest hash",
+      "passed": true
+    },
+    {
+      "check": "No pixel-identical images across splits",
+      "passed": true
+    },
+    {
+      "check": "Class AnnualCrop stratification",
+      "passed": true
+    },
+    {
+      "check": "Class Forest stratification",
+      "passed": true
+    },
+    {
+      "check": "Class HerbaceousVegetation stratification",
+      "passed": true
+    },
+    {
+      "check": "Class Highway stratification",
+      "passed": true
+    },
+    {
+      "check": "Class Industrial stratification",
+      "passed": true
+    },
+    {
+      "check": "Class Pasture stratification",
+      "passed": true
+    },
+    {
+      "check": "Class PermanentCrop stratification",
+      "passed": true
+    },
+    {
+      "check": "Class Residential stratification",
+      "passed": true
+    },
+    {
+      "check": "Class River stratification",
+      "passed": true
+    },
+    {
+      "check": "Class SeaLake stratification",
+      "passed": true
+    },
+    {
+      "check": "Three optimizers compared with identical initialization",
+      "passed": true
+    },
+    {
+      "check": "Selection uses best validation result",
+      "passed": true
+    },
+    {
+      "check": "Optimizer adam same samples",
+      "passed": true
+    },
+    {
+      "check": "Optimizer adam controlled configuration",
+      "passed": true
+    },
+    {
+      "check": "Optimizer adam complete history",
+      "passed": true
+    },
+    {
+      "check": "Optimizer momentum same samples",
+      "passed": true
+    },
+    {
+      "check": "Optimizer momentum controlled configuration",
+      "passed": true
+    },
+    {
+      "check": "Optimizer momentum complete history",
+      "passed": true
+    },
+    {
+      "check": "Optimizer sgd same samples",
+      "passed": true
+    },
+    {
+      "check": "Optimizer sgd controlled configuration",
+      "passed": true
+    },
+    {
+      "check": "Optimizer sgd complete history",
+      "passed": true
+    },
+    {
+      "check": "model_a: identical split hashes",
+      "passed": true
+    },
+    {
+      "check": "model_a: full finite history",
+      "passed": true
+    },
+    {
+      "check": "model_a: validation checkpoint selection",
+      "passed": true
+    },
+    {
+      "check": "model_a: checkpoint hash",
+      "passed": true
+    },
+    {
+      "check": "model_a: resolution cap",
+      "passed": true
+    },
+    {
+      "check": "model_a: at least 20 epochs with chosen optimizer",
+      "passed": true
+    },
+    {
+      "check": "model_a: parameter count",
+      "passed": true
+    },
+    {
+      "check": "model_a: predictions on exact test indices",
+      "passed": true
+    },
+    {
+      "check": "model_a: test truth from manifest",
+      "passed": true
+    },
+    {
+      "check": "model_a: recomputed test_accuracy",
+      "passed": true
+    },
+    {
+      "check": "model_a: recomputed macro_precision",
+      "passed": true
+    },
+    {
+      "check": "model_a: recomputed macro_recall",
+      "passed": true
+    },
+    {
+      "check": "model_a: confusion matrix",
+      "passed": true
+    },
+    {
+      "check": "model_a: measured file size",
+      "passed": true
+    },
+    {
+      "check": "model_a: measured epoch time",
+      "passed": true
+    },
+    {
+      "check": "model_a: figures figure",
+      "passed": true
+    },
+    {
+      "check": "model_a: confusion_matrices figure",
+      "passed": true
+    },
+    {
+      "check": "model_b: identical split hashes",
+      "passed": true
+    },
+    {
+      "check": "model_b: full finite history",
+      "passed": true
+    },
+    {
+      "check": "model_b: validation checkpoint selection",
+      "passed": true
+    },
+    {
+      "check": "model_b: checkpoint hash",
+      "passed": true
+    },
+    {
+      "check": "model_b: resolution cap",
+      "passed": true
+    },
+    {
+      "check": "model_b: at least 20 epochs with chosen optimizer",
+      "passed": true
+    },
+    {
+      "check": "model_b: parameter count",
+      "passed": true
+    },
+    {
+      "check": "Model B below 100,000 trainable parameters",
+      "passed": true
+    },
+    {
+      "check": "Model B reproduces selected optimizer pilot prefix",
+      "passed": true
+    },
+    {
+      "check": "model_b: predictions on exact test indices",
+      "passed": true
+    },
+    {
+      "check": "model_b: test truth from manifest",
+      "passed": true
+    },
+    {
+      "check": "model_b: recomputed test_accuracy",
+      "passed": true
+    },
+    {
+      "check": "model_b: recomputed macro_precision",
+      "passed": true
+    },
+    {
+      "check": "model_b: recomputed macro_recall",
+      "passed": true
+    },
+    {
+      "check": "model_b: confusion matrix",
+      "passed": true
+    },
+    {
+      "check": "model_b: measured file size",
+      "passed": true
+    },
+    {
+      "check": "model_b: measured epoch time",
+      "passed": true
+    },
+    {
+      "check": "model_b: figures figure",
+      "passed": true
+    },
+    {
+      "check": "model_b: confusion_matrices figure",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: identical split hashes",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: full finite history",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: validation checkpoint selection",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: checkpoint hash",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: resolution cap",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: two-stage pretrained training",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: parameter count",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: predictions on exact test indices",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: test truth from manifest",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: recomputed test_accuracy",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: recomputed macro_precision",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: recomputed macro_recall",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: confusion matrix",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: measured file size",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: measured epoch time",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: figures figure",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: confusion_matrices figure",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: identical split hashes",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: full finite history",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: validation checkpoint selection",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: checkpoint hash",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: resolution cap",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: two-stage pretrained training",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: parameter count",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: predictions on exact test indices",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: test truth from manifest",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: recomputed test_accuracy",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: recomputed macro_precision",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: recomputed macro_recall",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: confusion matrix",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: measured file size",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: measured epoch time",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: figures figure",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: confusion_matrices figure",
+      "passed": true
+    },
+    {
+      "check": "custom_models consistent with final comparison",
+      "passed": true
+    },
+    {
+      "check": "pretrained_models consistent with final comparison",
+      "passed": true
+    },
+    {
+      "check": "No Git repository created",
+      "passed": true
+    },
+    {
+      "check": "README present",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/convolution_savings.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/custom_models.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/efficientnet_b0_architecture.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/final_comparison.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/mobilenet_v2_architecture.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/model_a_architecture.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/model_b_architecture.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/model_inspection.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/optimizer_comparison.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/pretrained_models.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source data/splits/dataset_info.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/selected_optimizer.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/metrics.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/classification_report.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/confusion_matrix.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/test_predictions.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/metrics.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/classification_report.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/confusion_matrix.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/test_predictions.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/metrics.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/classification_report.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/confusion_matrix.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/test_predictions.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/metrics.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/classification_report.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/confusion_matrix.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/test_predictions.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/compute.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/custom_accuracy.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/custom_resources.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/dataset.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/model_a_layers.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/model_b_layers.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/optimizers.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/pretrained_accuracy.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/pretrained_resources.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/savings.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/transfer_stages.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/01_introduction.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/02_dataset.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/03_architectures.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/04_optimizer.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/05_custom.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/06_transfer.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/07_comparison.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/08_discussion.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/09_conclusion.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/10_appendix.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/efficientnet_b0.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/efficientnet_b0_curves.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/final_accuracy.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/final_resources.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/mobilenet_v2.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/mobilenet_v2_curves.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/model_a.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/model_a_curves.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/model_b.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/model_b_curves.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/optimizer_adam_curves.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/optimizer_comparison.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/optimizer_momentum_curves.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/figures/optimizer_sgd_curves.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "LaTeX source and compiled PDF exist",
+      "passed": true
+    },
+    {
+      "check": "No unresolved LaTeX errors or references",
+      "passed": true
+    }
+  ]
+}

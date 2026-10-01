@@ -1,0 +1,35 @@
+\section{Dataset and Data Preparation}
+\subsection{EuroSAT Dataset}
+EuroSAT comprises Sentinel-2 satellite scenes for land-use and land-cover
+classification \cite{helber2019}. We use the RGB version exposed by
+\texttt{torchvision.datasets.EuroSAT}, preserving its original class labels.
+\subsection{Dataset Classes}
+Table~\ref{tab:dataset} lists all ten original classes and their sample counts.
+Class sizes differ, so macro precision and recall complement overall accuracy
+by giving equal weight to each class. EuroSAT is the only dataset used for
+task-specific training and testing; CIFAR-10 is not used.
+\input{tables/dataset}
+
+\subsection{64x64 Input}
+All networks receive original $64\times64$ RGB images. The pretrained networks
+support this size through adaptive pooling; their usual larger ImageNet input
+recipe is not used. No images are upscaled above the assignment resolution cap.
+\subsection{70/15/15 Split}
+One stratified split is constructed with seed 3150: training receives 70\%,
+and the held-out 30\% is divided equally into validation and test sets. This
+gives 18,900 training, 4,050 validation and 4,050 test images, as shown in
+Table~\ref{tab:dataset}.
+Actual sample indices are saved as \texttt{train\_indices.json},
+\texttt{val\_indices.json} and \texttt{test\_indices.json}, alongside a
+path/label manifest in \texttt{data/splits/}.
+Hash checks bind every run to exactly the same split and sample order.
+An exhaustive content audit found no pixel-identical images across sets.
+This is an image-level split; geographic independence is not established.
+\subsection{Preprocessing and Augmentation}
+Images are decoded into a reusable unsigned-byte cache, converted to floating
+point and divided by 255. Fixed ImageNet normalization uses means
+$(0.485,0.456,0.406)$ and standard deviations $(0.229,0.224,0.225)$.
+Independent horizontal flips with probability 0.5 apply only during training.
+Validation and test processing is deterministic. Custom and pretrained models
+use the same pipeline here; neither normalization nor augmentation changes
+sample membership or estimates statistics from held-out data.

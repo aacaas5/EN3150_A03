@@ -1,0 +1,36 @@
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lllllr}
+\caption{Model B leaf layers, shapes and trainable parameter counts.}\label{tab:model_b_layers}\\
+\toprule Layer & Operation & Input (NCHW) & Output & K/S/P & Params \\ \midrule\endfirsthead
+\multicolumn{6}{l}{Model B layers (continued)}\\\toprule Layer & Operation & Input (NCHW) & Output & K/S/P & Params \\ \midrule\endhead
+f.0.0 & Conv2d & $1\times3\times64\times64$ & $1\times24\times64\times64$ & 3x3/1x1/1x1 & 648 \\
+f.0.1 & BN & $1\times24\times64\times64$ & $1\times24\times64\times64$ & -/-/- & 48 \\
+f.0.2 & ReLU & $1\times24\times64\times64$ & $1\times24\times64\times64$ & -/-/- & 0 \\
+f.0.3 & MaxPool & $1\times24\times64\times64$ & $1\times24\times32\times32$ & 2/2/0 & 0 \\
+f.1.0.0 & DWConv & $1\times24\times32\times32$ & $1\times24\times32\times32$ & 3x3/1x1/1x1 & 216 \\
+f.1.0.1 & BN & $1\times24\times32\times32$ & $1\times24\times32\times32$ & -/-/- & 48 \\
+f.1.0.2 & ReLU & $1\times24\times32\times32$ & $1\times24\times32\times32$ & -/-/- & 0 \\
+f.1.0.3 & PWConv & $1\times24\times32\times32$ & $1\times48\times32\times32$ & 1x1/1x1/0x0 & 1152 \\
+f.1.0.4 & BN & $1\times48\times32\times32$ & $1\times48\times32\times32$ & -/-/- & 96 \\
+f.1.0.5 & ReLU & $1\times48\times32\times32$ & $1\times48\times32\times32$ & -/-/- & 0 \\
+f.1.1 & MaxPool & $1\times48\times32\times32$ & $1\times48\times16\times16$ & 2/2/0 & 0 \\
+f.2.0.0 & DWConv & $1\times48\times16\times16$ & $1\times48\times16\times16$ & 3x3/1x1/1x1 & 432 \\
+f.2.0.1 & BN & $1\times48\times16\times16$ & $1\times48\times16\times16$ & -/-/- & 96 \\
+f.2.0.2 & ReLU & $1\times48\times16\times16$ & $1\times48\times16\times16$ & -/-/- & 0 \\
+f.2.0.3 & PWConv & $1\times48\times16\times16$ & $1\times96\times16\times16$ & 1x1/1x1/0x0 & 4608 \\
+f.2.0.4 & BN & $1\times96\times16\times16$ & $1\times96\times16\times16$ & -/-/- & 192 \\
+f.2.0.5 & ReLU & $1\times96\times16\times16$ & $1\times96\times16\times16$ & -/-/- & 0 \\
+f.2.1 & MaxPool & $1\times96\times16\times16$ & $1\times96\times8\times8$ & 2/2/0 & 0 \\
+f.3.0.0 & DWConv & $1\times96\times8\times8$ & $1\times96\times8\times8$ & 3x3/1x1/1x1 & 864 \\
+f.3.0.1 & BN & $1\times96\times8\times8$ & $1\times96\times8\times8$ & -/-/- & 192 \\
+f.3.0.2 & ReLU & $1\times96\times8\times8$ & $1\times96\times8\times8$ & -/-/- & 0 \\
+f.3.0.3 & PWConv & $1\times96\times8\times8$ & $1\times128\times8\times8$ & 1x1/1x1/0x0 & 12288 \\
+f.3.0.4 & BN & $1\times128\times8\times8$ & $1\times128\times8\times8$ & -/-/- & 256 \\
+f.3.0.5 & ReLU & $1\times128\times8\times8$ & $1\times128\times8\times8$ & -/-/- & 0 \\
+f.3.1 & MaxPool & $1\times128\times8\times8$ & $1\times128\times4\times4$ & 2/2/0 & 0 \\
+pool & GAP & $1\times128\times4\times4$ & $1\times128\times1\times1$ & -/-/- & 0 \\
+flatten & Flatten & $1\times128\times1\times1$ & $1\times128$ & -/-/- & 0 \\
+head & Linear & $1\times128$ & $1\times10$ & -/-/- & 1290 \\
+\midrule\multicolumn{5}{r}{Total trainable parameters} & 22,426 \\ \bottomrule
+\end{longtable}
+\endgroup

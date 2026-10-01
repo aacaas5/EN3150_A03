@@ -1,0 +1,12 @@
+% Generated from saved experiment evidence; do not edit values.
+\begin{table}[H]\centering\small
+\caption{Convolution weight counts excluding bias and normalization; reduction compares depthwise plus pointwise with standard convolution.}\label{tab:savings}
+\begin{tabular}{lrrrr}
+\toprule
+Channels & Standard & Depthwise & Pointwise & Reduction (\%) \\ \midrule
+24 to 48 & 10368 & 216 & 1152 & 86.81 \\
+48 to 96 & 41472 & 432 & 4608 & 87.85 \\
+96 to 128 & 110592 & 864 & 12288 & 88.11 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,2 @@
+epoch,stage,optimizer,lr,momentum,train_loss,val_loss,train_accuracy,val_accuracy,epoch_seconds
+1,full,adam,0.001,0.0,2.2698616981506348,2.218892216682434,0.16015625,1.0,1.1029648000840098

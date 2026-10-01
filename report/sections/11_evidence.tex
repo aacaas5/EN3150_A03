@@ -1,0 +1,36 @@
+\section{Reproducibility and Saved Evidence}
+\label{app:evidence}
+Before full training, checks verified dataset counts, split disjointness,
+$[128,3,64,64]$ batches, all four $[2,10]$ forward-pass outputs, Model B's
+parameter limit, and a short smoke training run. Metrics and plotting were
+also checked. Smoke outputs are debugging artifacts and are excluded from
+every experimental comparison in this report.
+
+Table~\ref{tab:evidence} maps the main requirements to saved evidence. Final
+verification recomputes test metrics from predictions, checks confusion
+matrices and sample indices, and verifies model sizes, parameter counts and
+history lengths. Numerical report tables derive from these files; report
+formatting changes do not modify experiment files.
+
+\begin{table}[H]\centering\small
+\caption{Assignment coverage and evidence locations relative to the project root.}
+\label{tab:evidence}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.62\textwidth}}
+\toprule Requirement & Saved evidence and report coverage\\\midrule
+Dataset and shared split & \path{data/splits/}; Table~\ref{tab:dataset}.\\
+Custom architectures and parameter limit & \path{results/tables/model_a_architecture.csv} and \path{results/tables/model_b_architecture.csv}; Tables~\ref{tab:model_a_layers} and~\ref{tab:model_b_layers}.\\
+Optimizer comparison & \path{results/tables/optimizer_comparison.csv}; Tables~\ref{tab:optimizers} and~\ref{tab:optimizer_dynamics}, Figure~\ref{fig:optimizer_comparison}.\\
+Custom training duration & \path{results/raw/model_a/history.csv} and \path{results/raw/model_b/history.csv}; Figures~\ref{fig:model_a_curves} and~\ref{fig:model_b_curves}.\\
+Both pretrained models and staged training & \path{results/raw/mobilenet_v2/} and \path{results/raw/efficientnet_b0/}; Table~\ref{tab:transfer_stages}.\\
+Test metrics and confusion matrices & Each final run directory contains \path{test_predictions.csv}, \path{classification_report.csv}, \path{confusion_matrix.csv} and \path{metrics.json}; Tables~\ref{tab:custom_accuracy} and~\ref{tab:pretrained_accuracy}.\\
+Resource comparisons & \path{results/tables/custom_models.csv}, \path{results/tables/pretrained_models.csv} and \path{results/tables/final_comparison.csv}; Section~\ref{sec:comparison}.\\
+Reproducibility and verification & \path{checkpoints/}, \path{README.md}, \path{RUN_LOG.md} and \path{results/verification.json}.\\
+\bottomrule\end{tabular}
+\end{table}
+
+The README gives Windows setup and execution commands. Epoch count, batch
+size and optimizer settings are configurable; this report describes the
+recorded runs rather than unexecuted configurations. Fixed seeds and
+deterministic algorithms support reproducibility in the recorded environment,
+but do not guarantee bitwise equality across different software or hardware.
+The saved split must be retained when reproducing or extending the experiments.

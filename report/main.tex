@@ -1,0 +1,76 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,booktabs,amsmath,float,longtable,array}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\input{tables/result_values}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\AddToHookNext{shipout/foreground}{%
+  \put(\dimexpr\paperwidth-24mm\relax,-8mm){%
+    \makebox[0pt][r]{\raisebox{-\height}{%
+      \begingroup\setlength{\fboxsep}{5pt}%
+      \fbox{\begin{minipage}{64mm}
+        \raggedleft\footnotesize
+        \textbf{Project Repository}\\[2pt]
+        \href{https://github.com/aacaas5/EN3150_A03.git}{github.com/aacaas5/EN3150\_A03}
+      \end{minipage}}\endgroup
+    }}%
+  }%
+}
+\centering
+{\large University of Moratuwa\par}
+\vspace{2cm}
+{\Large EN3150 Assignment 03\par}
+\vspace{0.8cm}
+{\huge\bfseries Resource-Constrained CNN\\[0.3cm]for Edge Image Classification\par}
+\vspace{1.8cm}
+{\large Module: EN3150\par}
+{\large Group name: Feature Four\par}
+\vspace{1cm}
+\begin{tabular}{ll}\toprule
+Group member & Index number\\\midrule
+{ARUNIYA R.} & {230059T}\\
+{MUHAMATH M.A.A.A.} & {230416L}\\
+{PIRIYATHARSAN M.} & {230491J}\\
+{SNEKAN S.} & {230620G}\\\bottomrule
+\end{tabular}
+\vfill
+{\large Experimental study and reproducible implementation\par}
+\end{titlepage}
+\hypersetup{pageanchor=true}
+\begin{abstract}
+Four CNNs are evaluated on a deterministic stratified 70/15/15 split of 27,000
+EuroSAT RGB images, using $64\times64$ inputs. Model A uses standard convolutions;
+Model B replaces later convolutions with depthwise-separable blocks. A controlled
+optimizer comparison selects Adam, and both custom models are trained for 25
+epochs. Model B has \BParams{} trainable parameters and achieves
+\BAccuracy\% test accuracy, compared with \AAccuracy\% for Model A.
+ImageNet-pretrained MobileNetV2 and EfficientNet-B0 achieve \MobileAccuracy\%
+and \EfficientAccuracy\%, respectively, after two-stage fine-tuning.
+Model B reduces parameters by \ParamReduction\% relative to Model A, but does
+not improve its measured host latency. The results show a storage--accuracy
+trade-off and demonstrate why arithmetic counts alone cannot predict runtime.
+\end{abstract}
+\tableofcontents
+\clearpage
+\input{sections/01_introduction}
+\input{sections/02_dataset}
+\input{sections/03_architectures}
+\input{sections/04_optimizer}
+\input{sections/05_custom}
+\input{sections/06_transfer}
+\input{sections/07_comparison}
+\input{sections/08_discussion}
+\input{sections/09_conclusion}
+\clearpage
+\bibliographystyle{plain}
+\bibliography{references}
+\clearpage
+\input{sections/10_appendix}
+\input{sections/11_evidence}
+\end{document}

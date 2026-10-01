@@ -1,0 +1,81 @@
+\section{Custom CNN Architectures}
+\subsection{Model A}
+Four standard $3\times3$ convolutions use channel widths 24, 48, 96 and 128.
+Each is followed by batch normalization, ReLU and $2\times2$ max-pooling.
+Padding preserves convolutional spatial size. Global average pooling and a
+small linear head avoid a large flattened dense layer. Batch normalization
+provides learned channel scaling and stabilizes intermediate feature scales.
+Table~\ref{tab:model_a_layers} gives every layer's input/output shape, kernel,
+stride, padding, activation and parameter count. The total is \AParams{};
+all parameters are trainable. The linear head outputs ten unnormalized logits
+for cross-entropy loss.
+
+\subsection{Model B}
+The stem, channel widths, pooling schedule and head match Model A. Each later
+standard convolution is replaced by a depthwise $3\times3$ convolution followed
+by a pointwise $1\times1$ convolution. Depthwise groups equal input channels.
+Each component has batch normalization and ReLU. These extra operations mean
+this is not a strict single-operator ablation. Table~\ref{tab:model_b_layers}
+identifies depthwise and pointwise operations separately. Channel counts are
+the second dimension of each NCHW shape, and activations are shown as separate
+rows. Model B is built from scratch using a reusable
+\texttt{DepthwiseSeparableConv} block.
+
+The executed count is \BParams{} trainable parameters, leaving
+\BMargin{} below the 100,000 limit. The constructor and verification script
+check this programmatically:
+\begin{verbatim}
+count = sum(p.numel() for p in model.parameters()
+            if p.requires_grad)
+assert count < 100000
+\end{verbatim}
+The sum of the layer counts in Table~\ref{tab:model_b_layers} independently
+agrees with this result.
+
+\subsection{Depthwise Separable Convolution}
+Depthwise filtering processes channels independently; pointwise convolution
+learns cross-channel combinations \cite{howard2017}. For output spatial size
+$H_o\times W_o$, multiplying the weight expressions below by $H_oW_o$ gives
+the corresponding convolution MAC counts for one image.
+Here a MAC is one multiply--accumulate operation. The factorization reduces
+the number of weights because a separate spatial kernel is no longer learned
+for every input--output channel pair. It also restricts the possible filters,
+so equal accuracy is not guaranteed.
+\subsection{Parameter Calculation}
+With convolution biases disabled,
+\begin{align}
+P_{\mathrm{standard}} &= K_hK_wC_{\mathrm{in}}C_{\mathrm{out}},\label{eq:standard}\\
+P_{\mathrm{DSC}} &= K_hK_wC_{\mathrm{in}} + C_{\mathrm{in}}C_{\mathrm{out}}.\label{eq:dsc}
+\end{align}
+In Equations~\eqref{eq:standard} and~\eqref{eq:dsc}, $K_h,K_w$ are kernel
+dimensions and $C_{\mathrm{in}},C_{\mathrm{out}}$ are channel counts. Dividing
+the two expressions gives
+\begin{equation}
+\frac{P_{\mathrm{DSC}}}{P_{\mathrm{standard}}}
+=\frac{1}{C_{\mathrm{out}}}+\frac{1}{K_hK_w},
+\qquad
+\text{reduction}=100\left(1-\frac{P_{\mathrm{DSC}}}{P_{\mathrm{standard}}}\right)\%.
+\label{eq:reduction}
+\end{equation}
+Table~\ref{tab:savings} applies Equation~\eqref{eq:reduction} to the three
+replaced convolutions. Batch normalization adds two
+trainable scalars per output channel; running statistics are non-trainable
+buffers. The classification head includes bias. Thus whole-network counts
+include more than the convolution weights in this table.
+\input{tables/savings}
+Summing the executed architecture tables gives \AConvParams{} convolution
+weights, \ABnParams{} normalization parameters and \AHeadParams{} head
+parameters for Model A, totalling \AParams{}. The corresponding Model B
+counts are \BConvParams{}, \BBnParams{} and \BHeadParams{}, totalling
+\BParams{}. Whole-network savings differ from an individual convolution's
+savings because the stem and head are retained and Model B adds normalization.
+
+\subsection{Hardware-Aware Activation Selection}
+ReLU computes $\max(0,x)$ using a simple comparison and avoids exponentials.
+It is widely supported by inference kernels and is compatible with common
+integer inference workflows. No quantization or activation-specific energy
+measurement is performed here, so hardware savings are not claimed empirically.
+ReLU is the deliberate choice for both custom networks. The pretrained
+architectures retain their original activations: MobileNetV2 uses ReLU6,
+whereas EfficientNet-B0 uses SiLU and sigmoid operations. They are not modified
+to match the custom networks.

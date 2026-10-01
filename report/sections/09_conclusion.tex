@@ -1,0 +1,11 @@
+\section{Conclusion}
+The custom resource-constrained model meets the parameter requirement with
+\BParams{} trainable parameters and \BAccuracy\% test accuracy. Relative to
+Model A, it saves \ParamReduction\% of parameters and \MacReduction\% of
+counted MACs at an observed accuracy cost of \CustomAccuracyGap{} percentage
+points, although host timing does not improve. Momentum improves the tested
+SGD recipe, while Adam gives the strongest validation result and is used for
+both final custom runs. MobileNetV2 achieves the highest observed test
+accuracy, \MobileAccuracy\%, at a larger storage cost. The preferred model
+therefore depends on weight-storage capacity, acceptable accuracy loss and
+measured target-device performance, rather than parameter count alone.

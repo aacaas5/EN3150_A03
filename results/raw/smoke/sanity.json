@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "batch_shape": [
+    128,
+    3,
+    64,
+    64
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "results/raw/efficientnet_b0/classification_report.csv": {
+    "rows": 13,
+    "columns": [
+      "Unnamed: 0",
+      "precision",
+      "recall",
+      "f1-score",
+      "support"
+    ],
+    "sha256": "d1bd841a1efb90a597f512501c58b28f0499c10a371192e32c83c7e7727f55fe"
+  },
+  "results/raw/efficientnet_b0/confusion_matrix.csv": {
+    "rows": 10,
+    "columns": [
+      "Unnamed: 0",
+      "AnnualCrop",
+      "Forest",
+      "HerbaceousVegetation",
+      "Highway",
+      "Industrial",
+      "Pasture",
+      "PermanentCrop",
+      "Residential",
+      "River",
+      "SeaLake"
+    ],
+    "sha256": "8a0ef2560c1769d8b22f5fdeae09c4c0462d6622967459fa37b72b42bec0ffa1"
+  },
+  "results/raw/efficientnet_b0/history.csv": {
+    "rows": 10,
+    "columns": [
+      "epoch",
+      "stage",
+      "optimizer",
+      "lr",
+      "momentum",
+      "train_loss",
+      "val_loss",
+      "train_accuracy",
+      "val_accuracy",
+      "epoch_seconds"
+    ],
+    "sha256": "aaf51d912aa22cb94039993db178f9cebef19948375457560e54e28e9e0e0b17"
+  },
+  "results/raw/efficientnet_b0/test_predictions.csv": {
+    "rows": 4050,
+    "columns": [
+      "sample_index",
+      "true_label",
+      "predicted_label"
+    ],
+    "sha256": "da979ac5606069716adf94e718e44861c82a2a2f121361b84fcd4a102c63f216"
+  },
+  "results/raw/mobilenet_v2/classification_report.csv": {
+    "rows": 13,
+    "columns": [
+      "Unnamed: 0",
+      "precision",
+      "recall",
+      "f1-score",
+      "support"
+    ],
+    "sha256": "846535ac99b25664dcc527d5bf21ab2da1081d9cdf6c724a643055daebfcf718"
+  },
+  "results/raw/mobilenet_v2/confusion_matrix.csv": {
+    "rows": 10,
+    "columns": [
+      "Unnamed: 0",
+      "AnnualCrop",
+      "Forest",
+      "HerbaceousVegetation",
+      "Highway",
+      "Industrial",
+      "Pasture",
+      "PermanentCrop",
+      "Residential",
+      "River",
+      "SeaLake"
+    ],
+    "sha256": "85ad4aec2fab7ef6bc42b507f04059aa5bbb61a73ef83d862c7616ce4db9646a"
+  },
+  "results/raw/mobilenet_v2/history.csv": {
+    "rows": 10,
+    "columns": [
+      "epoch",
+      "stage",
+      "optimizer",
+      "lr",
+      "momentum",
+      "train_loss",
+      "val_loss",
+      "train_accuracy",
+      "val_accuracy",
+      "epoch_seconds"
+    ],
+    "sha256": "3b306d046d725c4922a80c74a15777e226ad900fe2d2870da4a5bf389b9148d4"
+  },
+  "results/raw/mobilenet_v2/test_predictions.csv": {
+    "rows": 4050,
+    "columns": [
+      "sample_index",
+      "true_label",
+      "predicted_label"
+    ],
+    "sha256": "ef0b249a464be6f557b4f88c5a3318f819248afe5d53aac01d9440ab7c4a554c"
+  },
+  "results/raw/model_a/classification_report.csv": {
+    "rows": 13,
+    "columns": [
+      "Unnamed: 0",
+      "precision",
+      "recall",
+      "f1-score",
+      "support"
+    ],
+    "sha256": "32034a899dfe5443a9ed2ded1f328e0129f63a6042316b63b00ff46c90aa383b"
+  },
+  "results/raw/model_a/confusion_matrix.csv": {
+    "rows": 10,
+    "columns": [
+      "Unnamed: 0",
+      "AnnualCrop",
+      "Forest",
+      "HerbaceousVegetation",
+      "Highway",
+      "Industrial",
+      "Pasture",
+      "PermanentCrop",
+      "Residential",
+      "River",
+      "SeaLake"
+    ],
+    "sha256": "c5fdc2558a21edb5af1964c60dd033976c11144cbe0adab042c42abfec87c298"
+  },
+  "results/raw/model_a/history.csv": {
+    "rows": 25,
+    "columns": [
+      "epoch",
+      "stage",
+      "optimizer",
+      "lr",
+      "momentum",
+      "train_loss",
+      "val_loss",
+      "train_accuracy",
+      "val_accuracy",
+      "epoch_seconds"
+    ],
+    "sha256": "4a4a0c9b1cf0a92c4595a01db8ed9b2056534154caa47dfa97b7113510f10a98"
+  },
+  "results/raw/model_a/test_predictions.csv": {
+    "rows": 4050,
+    "columns": [
+      "sample_index",
+      "true_label",
+      "predicted_label"
+    ],
+    "sha256": "8317d4ba9c082be6dc1216197a5a423affacca6307089df4968fef7619faa58d"
+  },
+  "results/raw/model_b/classification_report.csv": {
+    "rows": 13,
+    "columns": [
+      "Unnamed: 0",
+      "precision",
+      "recall",
+      "f1-score",
+      "support"
+    ],
+    "sha256": "082f311d6d3f44feed7135c0ce0d83faf7c1f9ac382c1193976a221248cdd4f3"
+  },
+  "results/raw/model_b/confusion_matrix.csv": {
+    "rows": 10,
+    "columns": [
+      "Unnamed: 0",
+      "AnnualCrop",
+      "Forest",
+      "HerbaceousVegetation",
+      "Highway",
+      "Industrial",
+      "Pasture",
+      "PermanentCrop",
+      "Residential",
+      "River",
+      "SeaLake"
+    ],
+    "sha256": "0c0957c6653c7148b16f2df54da4ccc691fc7d6de8822162b573b1220ae1787b"
+  },
+  "results/raw/model_b/history.csv": {
+    "rows": 25,
+    "columns": [
+      "epoch",
+      "stage",
+      "optimizer",
+      "lr",
+      "momentum",
+      "train_loss",
+      "val_loss",
+      "train_accuracy",
+      "val_accuracy",
+      "epoch_seconds"
+    ],
+    "sha256": "8710de57514b6f79577318746ada20291c883c4866461ff75340cbd4cd804f58"
+  },
+  "results/raw/model_b/test_predictions.csv": {
+    "rows": 4050,
+    "columns": [
+      "sample_index",
+      "true_label",
+      "predicted_label"
+    ],
+    "sha256": "c2a110175de2b841a80389ff9ad4d97723c8320c96c6ec961236c493cef973a2"
+  },
+  "results/raw/optimizer_adam/history.csv": {
+    "rows": 10,
+    "columns": [
+      "epoch",
+      "stage",
+      "optimizer",
+      "lr",
+      "momentum",
+      "train_loss",
+      "val_loss",
+      "train_accuracy",
+      "val_accuracy",
+      "epoch_seconds"
+    ],
+    "sha256": "6f377db771907fba0c015a415e884eb0360599536338cde50d920a0db9aa341b"
+  },
+  "results/raw/optimizer_momentum/history.csv": {
+    "rows": 10,
+    "columns": [
+      "epoch",
+      "stage",
+      "optimizer",
+      "lr",
+      "momentum",
+      "train_loss",
+      "val_loss",
+      "train_accuracy",
+      "val_accuracy",
+      "epoch_seconds"
+    ],
+    "sha256": "99e063b19bcbfbacda80fae0c725428be45e2d57f7a1f1b3c39173b79f51efae"
+  },
+  "results/raw/optimizer_sgd/history.csv": {
+    "rows": 10,
+    "columns": [
+      "epoch",
+      "stage",
+      "optimizer",
+      "lr",
+      "momentum",
+      "train_loss",
+      "val_loss",
+      "train_accuracy",
+      "val_accuracy",
+      "epoch_seconds"
+    ],
+    "sha256": "601c8d746db6df7dfe1cff359a94b5db5195ab3a5f063e30130222d939549d62"
+  },
+  "results/raw/smoke/history.csv": {
+    "rows": 1,
+    "columns": [
+      "epoch",
+      "stage",
+      "optimizer",
+      "lr",
+      "momentum",
+      "train_loss",
+      "val_loss",
+      "train_accuracy",
+      "val_accuracy",
+      "epoch_seconds"
+    ],
+    "sha256": "63a40f7873bcd2f166ffbef21f92b58a427da7b5aa18eb4431e1aa32b128f086"
+  },
+  "results/tables/convolution_savings.csv": {
+    "rows": 3,
+    "columns": [
+      "cin",
+      "cout",
+      "standard_weights",
+      "depthwise_weights",
+      "pointwise_weights",
+      "dsc_weights",
+      "reduction_percent"
+    ],
+    "sha256": "0f099d9597a56e9c3dd4a9728cbbd6b7d48b6587838d9dd0c2a0a70166783e63"
+  },
+  "results/tables/custom_models.csv": {
+    "rows": 2,
+    "columns": [
+      "model",
+      "total_parameters",
+      "trainable_parameters",
+      "conv_linear_macs",
+      "conv_linear_flops_2mac",
+      "model_size_bytes",
+      "model_size_kb",
+      "model_size_mb",
+      "avg_epoch_time_seconds",
+      "best_epoch",
+      "epochs",
+      "test_accuracy",
+      "macro_precision",
+      "macro_recall",
+      "cpu_latency_ms_mean",
+      "cpu_latency_ms_median",
+      "cpu_latency_ms_p95",
+      "latency_repeats",
+      "cpu_threads"
+    ],
+    "sha256": "88bdb63b28a612726439a581b1b7409a498035295146b427fec948da37bbf64f"
+  },
+  "results/tables/efficientnet_b0_architecture.csv": {
+    "rows": 223,
+    "columns": [
+      "layer",
+      "type",
+      "input_shape",
+      "output_shape",
+      "kernel",
+      "in_channels",
+      "out_channels",
+      "stride",
+      "padding",
+      "groups",
+      "activation",
+      "parameters",
+      "trainable_parameters",
+      "conv_linear_macs"
+    ],
+    "sha256": "1f77d3bb632997eb3de1ae61b6fc0cd052c2edf76852be7d9df4d785e315e682"
+  },
+  "results/tables/final_comparison.csv": {
+    "rows": 4,
+    "columns": [
+      "model",
+      "total_parameters",
+      "trainable_parameters",
+      "conv_linear_macs",
+      "conv_linear_flops_2mac",
+      "model_size_bytes",
+      "model_size_kb",
+      "model_size_mb",
+      "avg_epoch_time_seconds",
+      "best_epoch",
+      "epochs",
+      "test_accuracy",
+      "macro_precision",
+      "macro_recall",
+      "cpu_latency_ms_mean",
+      "cpu_latency_ms_median",
+      "cpu_latency_ms_p95",
+      "latency_repeats",
+      "cpu_threads"
+    ],
+    "sha256": "f27c7f943d61127074e9249581762dc72b13efec6ef163f9488b9d209b6f38fb"
+  },
+  "results/tables/mobilenet_v2_architecture.csv": {
+    "rows": 141,
+    "columns": [
+      "layer",
+      "type",
+      "input_shape",
+      "output_shape",
+      "kernel",
+      "in_channels",
+      "out_channels",
+      "stride",
+      "padding",
+      "groups",
+      "activation",
+      "parameters",
+      "trainable_parameters",
+      "conv_linear_macs"
+    ],
+    "sha256": "c4e85887b41e8e7b09f9b6c9b771d14bb8ae5a284dd3c6e701803297a2617f2b"
+  },
+  "results/tables/model_a_architecture.csv": {
+    "rows": 19,
+    "columns": [
+      "layer",
+      "type",
+      "input_shape",
+      "output_shape",
+      "kernel",
+      "in_channels",
+      "out_channels",
+      "stride",
+      "padding",
+      "groups",
+      "activation",
+      "parameters",
+      "trainable_parameters",
+      "conv_linear_macs"
+    ],
+    "sha256": "72eaf2e218f489fcf594f54ccb6cb21467bb3763b0d6577afdb69ebaf29c69f1"
+  },
+  "results/tables/model_b_architecture.csv": {
+    "rows": 28,
+    "columns": [
+      "layer",
+      "type",
+      "input_shape",
+      "output_shape",
+      "kernel",
+      "in_channels",
+      "out_channels",
+      "stride",
+      "padding",
+      "groups",
+      "activation",
+      "parameters",
+      "trainable_parameters",
+      "conv_linear_macs"
+    ],
+    "sha256": "8be5d8b08498fd1aa121da2060e4e88c4923824b9b3d84ee55bb410992fd9a42"
+  },
+  "results/tables/model_inspection.csv": {
+    "rows": 4,
+    "columns": [
+      "model",
+      "total_parameters",
+      "trainable_parameters",
+      "conv_linear_macs",
+      "conv_linear_flops_2mac"
+    ],
+    "sha256": "aac8b60b18cad8bd6f31fea7b8774b2c03ac5a05ded24cfaecabc150438a788b"
+  },
+  "results/tables/optimizer_comparison.csv": {
+    "rows": 3,
+    "columns": [
+      "optimizer",
+      "lr",
+      "momentum",
+      "epochs",
+      "best_val_accuracy",
+      "best_epoch",
+      "best_val_loss",
+      "final_val_accuracy",
+      "final_train_accuracy",
+      "final_val_loss",
+      "avg_epoch_time_seconds",
+      "initial_state_sha256"
+    ],
+    "sha256": "5f718d813f96a9120a313f0cae5a1066b863b7db301cfe26692d79ab863e35ae"
+  },
+  "results/tables/pretrained_models.csv": {
+    "rows": 2,
+    "columns": [
+      "model",
+      "total_parameters",
+      "trainable_parameters",
+      "conv_linear_macs",
+      "conv_linear_flops_2mac",
+      "model_size_bytes",
+      "model_size_kb",
+      "model_size_mb",
+      "avg_epoch_time_seconds",
+      "best_epoch",
+      "epochs",
+      "test_accuracy",
+      "macro_precision",
+      "macro_recall",
+      "cpu_latency_ms_mean",
+      "cpu_latency_ms_median",
+      "cpu_latency_ms_p95",
+      "latency_repeats",
+      "cpu_threads"
+    ],
+    "sha256": "a13e79029c13a9da98c9158b4f7e217d44f52350cd6d6c941a12aad54607467b"
+  }
+}

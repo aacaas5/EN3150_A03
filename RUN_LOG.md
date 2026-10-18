@@ -47,3 +47,13 @@
 - `pdftoppm -scale-to 1000 -png report/main.pdf tmp/pdf-review/page`: rendered all 18 pages. Visually inspected all pages via contact sheets and detailed architecture/confusion-matrix pages; no clipping, overlapping content or missing figures. Review artifacts are under tmp/pdf-review/.
 - `python -m scripts.verify_project --require-report`: PASS, 172 checks, including generated report assets/source-result hashes. `python -m compileall -q src scripts config.py` also passed. Final audit evidence: `results/verification.json`.
 - All requested experiments completed; no fabricated values, no Git initialization, no GitHub activity. Remaining user information is limited to title-page group/member/index placeholders.
+
+## 2026-10-19 — final no-retraining rubric audit
+
+- Preserved the saved split, checkpoints, histories, predictions, original latency values and model architectures.
+- Recomputed macro F1 and weighted precision/recall/F1 from all saved test predictions; no inference or training was rerun.
+- Added one master four-model comparison, largest-single-activation estimates, a separately labelled fresh CPU timing repeat with standard deviation, a two-panel accuracy/resource figure and an eight-image representative error panel.
+- Strengthened architecture fairness, optimizer-recipe and edge-deployment discussion without changing experimental claims.
+- Executed all 41 notebook cells in default quick-review mode; expensive data/training flags remained disabled.
+- Compiled and visually inspected the 24-page final-named PDF. LaTeX reported no unresolved references, citation warnings or overfull boxes.
+- Final consistency audit passed 84 checks across prediction-derived metrics, confusion matrices, split identity, checkpoint sizes, notebook defaults and report values.

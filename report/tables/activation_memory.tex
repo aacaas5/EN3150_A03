@@ -1,0 +1,12 @@
+\begin{table}[t]
+\centering\small
+\caption{Largest observed single intermediate activation tensor for batch-one FP32 inference. This is not total peak runtime RAM.}
+\label{tab:activation-memory}
+\begin{tabular}{lrrr}\toprule
+Model & Shape & Elements & FP32 (KiB)\\\midrule
+Model A & 1$\times$24$\times$64$\times$64 & 98,304 & 384.0\\
+Model B & 1$\times$24$\times$64$\times$64 & 98,304 & 384.0\\
+MobileNetV2 & 1$\times$96$\times$32$\times$32 & 98,304 & 384.0\\
+EfficientNet-B0 & 1$\times$96$\times$32$\times$32 & 98,304 & 384.0\\
+\bottomrule\end{tabular}
+\end{table}

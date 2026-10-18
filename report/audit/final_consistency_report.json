@@ -1,0 +1,368 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "Dataset total and split sizes",
+      "status": "PASS"
+    },
+    {
+      "check": "Saved split hashes shared by all final runs",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a recomputed test_accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a master table test_accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a recomputed macro_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a master table macro_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a recomputed macro_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a master table macro_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a recomputed macro_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a master table macro_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a recomputed weighted_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a master table weighted_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a recomputed weighted_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a master table weighted_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a recomputed weighted_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a master table weighted_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a confusion matrix from predictions",
+      "status": "PASS"
+    },
+    {
+      "check": "model_a measured checkpoint size",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b recomputed test_accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b master table test_accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b recomputed macro_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b master table macro_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b recomputed macro_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b master table macro_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b recomputed macro_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b master table macro_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b recomputed weighted_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b master table weighted_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b recomputed weighted_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b master table weighted_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b recomputed weighted_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b master table weighted_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b confusion matrix from predictions",
+      "status": "PASS"
+    },
+    {
+      "check": "model_b measured checkpoint size",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 recomputed test_accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 master table test_accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 recomputed macro_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 master table macro_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 recomputed macro_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 master table macro_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 recomputed macro_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 master table macro_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 recomputed weighted_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 master table weighted_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 recomputed weighted_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 master table weighted_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 recomputed weighted_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 master table weighted_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 confusion matrix from predictions",
+      "status": "PASS"
+    },
+    {
+      "check": "mobilenet_v2 measured checkpoint size",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 recomputed test_accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 master table test_accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 recomputed macro_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 master table macro_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 recomputed macro_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 master table macro_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 recomputed macro_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 master table macro_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 recomputed weighted_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 master table weighted_precision",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 recomputed weighted_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 master table weighted_recall",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 recomputed weighted_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 master table weighted_f1",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 confusion matrix from predictions",
+      "status": "PASS"
+    },
+    {
+      "check": "efficientnet_b0 measured checkpoint size",
+      "status": "PASS"
+    },
+    {
+      "check": "Notebook quick-review box",
+      "status": "PASS"
+    },
+    {
+      "check": "Notebook expensive flags default false",
+      "status": "PASS"
+    },
+    {
+      "check": "Notebook embedded checks executed",
+      "status": "PASS"
+    },
+    {
+      "check": "Notebook has no absolute local-user path",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains model_a accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains model_a parameter count",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains model_a MAC value",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains model_b accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains model_b parameter count",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains model_b MAC value",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains mobilenet_v2 accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains mobilenet_v2 parameter count",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains mobilenet_v2 MAC value",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains efficientnet_b0 accuracy",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains efficientnet_b0 parameter count",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains efficientnet_b0 MAC value",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains macro F1 master heading",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF contains activation-memory warning",
+      "status": "PASS"
+    }
+  ],
+  "rubric_statuses": [
+    {
+      "rubric_section": "Custom Architecture Design",
+      "status": "COMPLETE",
+      "remaining_risk": "Architecture merit remains subject to lecturer judgement"
+    },
+    {
+      "rubric_section": "Optimizer Selection & Tuning",
+      "status": "COMPLETE",
+      "remaining_risk": "Fixed recipes are not an exhaustive hyperparameter search"
+    },
+    {
+      "rubric_section": "Custom Model Training & Evaluation",
+      "status": "COMPLETE",
+      "remaining_risk": "Single-seed final runs limit variance claims"
+    },
+    {
+      "rubric_section": "SOTA Fine-Tuning & Evaluation",
+      "status": "COMPLETE",
+      "remaining_risk": "64x64 input differs from the original ImageNet recipe"
+    },
+    {
+      "rubric_section": "Final Comparison & Trade-off Discussion",
+      "status": "COMPLETE",
+      "remaining_risk": "No true edge-device power, peak RAM or quantized benchmark"
+    }
+  ]
+}

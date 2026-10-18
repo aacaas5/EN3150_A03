@@ -5,6 +5,10 @@ Each is followed by batch normalization, ReLU and $2\times2$ max-pooling.
 Padding preserves convolutional spatial size. Global average pooling and a
 small linear head avoid a large flattened dense layer. Batch normalization
 provides learned channel scaling and stabilizes intermediate feature scales.
+The early feature maps are large, so the first stage uses only 24 channels.
+The width increases as pooling reduces the spatial size. This adds feature
+capacity without paying the cost of 128 channels at full $64\times64$
+resolution. The final global average pool keeps the classifier small.
 Table~\ref{tab:model_a_layers} gives every layer's input/output shape, kernel,
 stride, padding, activation and parameter count. The total is \AParams{};
 all parameters are trainable. The linear head outputs ten unnormalized logits
@@ -14,6 +18,9 @@ for cross-entropy loss.
 The stem, channel widths, pooling schedule and head match Model A. Each later
 standard convolution is replaced by a depthwise $3\times3$ convolution followed
 by a pointwise $1\times1$ convolution. Depthwise groups equal input channels.
+Keeping the same 24, 48, 96 and 128 widths and the same pooling locations makes
+the custom comparison easier to interpret: both networks expose features at
+the same spatial scales and use the same-size classifier head.
 Each component has batch normalization and ReLU. These extra operations mean
 this is not a strict single-operator ablation. Table~\ref{tab:model_b_layers}
 identifies depthwise and pointwise operations separately. Channel counts are

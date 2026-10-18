@@ -1,0 +1,23 @@
+{
+  "no_retraining": true,
+  "source_predictions": {
+    "model_a": "8317d4ba9c082be6dc1216197a5a423affacca6307089df4968fef7619faa58d",
+    "model_b": "c2a110175de2b841a80389ff9ad4d97723c8320c96c6ec961236c493cef973a2",
+    "mobilenet_v2": "ef0b249a464be6f557b4f88c5a3318f819248afe5d53aac01d9440ab7c4a554c",
+    "efficientnet_b0": "da979ac5606069716adf94e718e44861c82a2a2f121361b84fcd4a102c63f216"
+  },
+  "source_checkpoints": {
+    "model_a": "ac8d1b021790bd4388135a7bae9f512c53e81d5e97752e818cdb4cf30b0568bc",
+    "model_b": "2a31f48a54b87bfe595a3ebab0e810ef0bff70d2c733a3c57c03dac4480be676",
+    "mobilenet_v2": "386cdc86951fc55c81d435516a9cbcd000e93a1503d1f08daba80458aec080f4",
+    "efficientnet_b0": "5736972d78219c570a63ae86a26cf6345e9adf9cd6d59a1e3878ef47b306db14"
+  },
+  "outputs": [
+    "results/tables/master_comparison.csv",
+    "results/tables/activation_memory_estimate.csv",
+    "results/tables/cpu_latency_rebenchmark.csv",
+    "results/tables/representative_errors.csv",
+    "results/figures/accuracy_resource_pareto.pdf",
+    "results/figures/representative_errors.pdf"
+  ]
+}

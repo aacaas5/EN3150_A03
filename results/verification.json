@@ -151,6 +151,22 @@
       "passed": true
     },
     {
+      "check": "model_a: recomputed macro_f1",
+      "passed": true
+    },
+    {
+      "check": "model_a: recomputed weighted_precision",
+      "passed": true
+    },
+    {
+      "check": "model_a: recomputed weighted_recall",
+      "passed": true
+    },
+    {
+      "check": "model_a: recomputed weighted_f1",
+      "passed": true
+    },
+    {
       "check": "model_a: confusion matrix",
       "passed": true
     },
@@ -227,6 +243,22 @@
       "passed": true
     },
     {
+      "check": "model_b: recomputed macro_f1",
+      "passed": true
+    },
+    {
+      "check": "model_b: recomputed weighted_precision",
+      "passed": true
+    },
+    {
+      "check": "model_b: recomputed weighted_recall",
+      "passed": true
+    },
+    {
+      "check": "model_b: recomputed weighted_f1",
+      "passed": true
+    },
+    {
       "check": "model_b: confusion matrix",
       "passed": true
     },
@@ -292,6 +324,22 @@
     },
     {
       "check": "mobilenet_v2: recomputed macro_recall",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: recomputed macro_f1",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: recomputed weighted_precision",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: recomputed weighted_recall",
+      "passed": true
+    },
+    {
+      "check": "mobilenet_v2: recomputed weighted_f1",
       "passed": true
     },
     {
@@ -363,6 +411,22 @@
       "passed": true
     },
     {
+      "check": "efficientnet_b0: recomputed macro_f1",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: recomputed weighted_precision",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: recomputed weighted_recall",
+      "passed": true
+    },
+    {
+      "check": "efficientnet_b0: recomputed weighted_f1",
+      "passed": true
+    },
+    {
       "check": "efficientnet_b0: confusion matrix",
       "passed": true
     },
@@ -391,7 +455,7 @@
       "passed": true
     },
     {
-      "check": "No Git repository created",
+      "check": "Expected Git repository present",
       "passed": true
     },
     {
@@ -399,43 +463,27 @@
       "passed": true
     },
     {
-      "check": "Report source results/tables/convolution_savings.csv unchanged",
+      "check": "Safe audit table present: master_comparison.csv",
       "passed": true
     },
     {
-      "check": "Report source results/tables/custom_models.csv unchanged",
+      "check": "Safe audit table present: activation_memory_estimate.csv",
       "passed": true
     },
     {
-      "check": "Report source results/tables/efficientnet_b0_architecture.csv unchanged",
+      "check": "Safe audit table present: cpu_latency_rebenchmark.csv",
       "passed": true
     },
     {
-      "check": "Report source results/tables/final_comparison.csv unchanged",
+      "check": "Safe audit table present: representative_errors.csv",
       "passed": true
     },
     {
-      "check": "Report source results/tables/mobilenet_v2_architecture.csv unchanged",
+      "check": "Report source config.py unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/tables/model_a_architecture.csv unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source results/tables/model_b_architecture.csv unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source results/tables/model_inspection.csv unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source results/tables/optimizer_comparison.csv unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source results/tables/pretrained_models.csv unchanged",
+      "check": "Report source data/splits/content_audit.json unchanged",
       "passed": true
     },
     {
@@ -443,187 +491,83 @@
       "passed": true
     },
     {
-      "check": "Report source results/raw/selected_optimizer.json unchanged",
+      "check": "Report source data/splits/sample_manifest.json unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_a/metrics.json unchanged",
+      "check": "Report source data/splits/test_indices.json unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_a/run.json unchanged",
+      "check": "Report source data/splits/train_indices.json unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_a/classification_report.csv unchanged",
+      "check": "Report source data/splits/val_indices.json unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_a/confusion_matrix.csv unchanged",
+      "check": "Report source FeatureFour_A03_EN3150.ipynb unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_a/history.csv unchanged",
+      "check": "Report source README.md unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_a/test_predictions.csv unchanged",
+      "check": "Report source report/audit/add_safe_improvements.py unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_b/metrics.json unchanged",
+      "check": "Report source report/audit/build_numeric_assets.py unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_b/run.json unchanged",
+      "check": "Report source report/audit/csv_inventory.json unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_b/classification_report.csv unchanged",
+      "check": "Report source report/audit/evidence_hashes_before.json unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_b/confusion_matrix.csv unchanged",
+      "check": "Report source report/audit/execute_notebook.py unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_b/history.csv unchanged",
+      "check": "Report source report/audit/final_audit.py unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/model_b/test_predictions.csv unchanged",
+      "check": "Report source report/audit/final_consistency_report.json unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/mobilenet_v2/metrics.json unchanged",
+      "check": "Report source report/audit/final_rubric_audit.csv unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/mobilenet_v2/run.json unchanged",
+      "check": "Report source report/audit/review_pages.py unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/mobilenet_v2/classification_report.csv unchanged",
+      "check": "Report source report/audit/scan_evidence.py unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/mobilenet_v2/confusion_matrix.csv unchanged",
+      "check": "Report source report/audit/update_provenance.py unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/mobilenet_v2/history.csv unchanged",
+      "check": "Report source report/audit/verification.json unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/mobilenet_v2/test_predictions.csv unchanged",
+      "check": "Report source report/audit/verify_report.py unchanged",
       "passed": true
     },
     {
-      "check": "Report source results/raw/efficientnet_b0/metrics.json unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source results/raw/efficientnet_b0/run.json unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source results/raw/efficientnet_b0/classification_report.csv unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source results/raw/efficientnet_b0/confusion_matrix.csv unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source results/raw/efficientnet_b0/history.csv unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source results/raw/efficientnet_b0/test_predictions.csv unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/tables/compute.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/tables/custom_accuracy.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/tables/custom_resources.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/tables/dataset.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/tables/model_a_layers.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/tables/model_b_layers.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/tables/optimizers.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/tables/pretrained_accuracy.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/tables/pretrained_resources.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/tables/savings.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/tables/transfer_stages.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/sections/01_introduction.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/sections/02_dataset.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/sections/03_architectures.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/sections/04_optimizer.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/sections/05_custom.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/sections/06_transfer.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/sections/07_comparison.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/sections/08_discussion.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/sections/09_conclusion.tex unchanged",
-      "passed": true
-    },
-    {
-      "check": "Report source report/sections/10_appendix.tex unchanged",
+      "check": "Report source report/figures/accuracy_resource_pareto.pdf unchanged",
       "passed": true
     },
     {
@@ -683,7 +627,427 @@
       "passed": true
     },
     {
-      "check": "LaTeX source and compiled PDF exist",
+      "check": "Report source report/figures/representative_errors.pdf unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/main.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/references.bib unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/01_introduction.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/02_dataset.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/03_architectures.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/04_optimizer.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/05_custom.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/06_transfer.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/07_comparison.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/08_discussion.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/09_conclusion.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/10_appendix.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/sections/11_evidence.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/activation_memory.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/compute.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/custom_accuracy.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/custom_resources.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/dataset.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/latency_rebenchmark.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/master_comparison.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/model_a_layers.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/model_b_layers.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/optimizer_dynamics.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/optimizers.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/pretrained_accuracy.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/pretrained_resources.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/result_values.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/savings.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source report/tables/transfer_stages.tex unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source requirements.txt unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/classification_report.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/confusion_matrix.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/metrics.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/efficientnet_b0/test_predictions.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/classification_report.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/confusion_matrix.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/metrics.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/mobilenet_v2/test_predictions.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/classification_report.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/confusion_matrix.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/metrics.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_a/test_predictions.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/classification_report.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/confusion_matrix.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/metrics.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/model_b/test_predictions.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/optimizer_adam/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/optimizer_adam/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/optimizer_momentum/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/optimizer_momentum/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/optimizer_sgd/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/optimizer_sgd/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/selected_optimizer.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/smoke/history.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/smoke/run.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/raw/smoke/sanity.json unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/activation_memory_estimate.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/convolution_savings.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/cpu_latency_rebenchmark.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/custom_models.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/efficientnet_b0_architecture.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/final_comparison.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/master_comparison.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/mobilenet_v2_architecture.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/model_a_architecture.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/model_b_architecture.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/model_inspection.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/optimizer_comparison.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/pretrained_models.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source results/tables/representative_errors.csv unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source RUN_LOG.md unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source scripts/__init__.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source scripts/evaluate_all.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source scripts/generate_report_assets.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source scripts/inspect_models.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source scripts/optimizer_experiment.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source scripts/prepare_data.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source scripts/run_experiments.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source scripts/smoke_test.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source scripts/train_custom.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source scripts/train_pretrained.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source scripts/verify_project.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/__init__.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/dataset.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/evaluation.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/metrics.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/models/__init__.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/models/model_a.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/models/model_b.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/models/pretrained.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/plotting.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/profiling.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/training.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source src/utils.py unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report source TODO.md unchanged",
+      "passed": true
+    },
+    {
+      "check": "LaTeX source and final-named PDF exist",
+      "passed": true
+    },
+    {
+      "check": "Final self-contained notebook exists",
       "passed": true
     },
     {

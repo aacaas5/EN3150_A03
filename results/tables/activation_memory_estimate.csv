@@ -1,0 +1,5 @@
+model,layer,shape,elements,fp32_bytes,fp32_kib,fp32_mib,scope
+model_a,features.0.0,1x24x64x64,98304,393216,384.0,0.375,largest single leaf-layer output tensor; not total peak runtime RAM
+model_b,features.0.0,1x24x64x64,98304,393216,384.0,0.375,largest single leaf-layer output tensor; not total peak runtime RAM
+mobilenet_v2,features.2.conv.0.0,1x96x32x32,98304,393216,384.0,0.375,largest single leaf-layer output tensor; not total peak runtime RAM
+efficientnet_b0,features.2.0.block.0.0,1x96x32x32,98304,393216,384.0,0.375,largest single leaf-layer output tensor; not total peak runtime RAM

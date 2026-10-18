@@ -9,3 +9,7 @@ both final custom runs. MobileNetV2 achieves the highest observed test
 accuracy, \MobileAccuracy\%, at a larger storage cost. The preferred model
 therefore depends on weight-storage capacity, acceptable accuracy loss and
 measured target-device performance, rather than parameter count alone.
+In this experiment EfficientNet-B0 does not offset its larger file and longer
+latency with higher accuracy than MobileNetV2. Actual edge hardware remains the
+final test because host latency, MACs and a single-activation estimate do not
+measure total runtime memory or energy.

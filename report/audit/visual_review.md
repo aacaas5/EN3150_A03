@@ -1,8 +1,10 @@
-# Final report review
+# Final report visual review
 
-- Reviewed all 21 rendered A4 pages of `report/main_revised.pdf` after the final compilation.
-- Tables, figures, captions, numbered equations and architecture rows fit within the page margins; no clipped or overlapping content was found.
-- All required figures have captions and textual cross-references. All numerical tables, including the two layer-wise architecture tables, have captions and textual cross-references.
-- The final LaTeX log has no unresolved references, citations, overfull/underfull boxes or PDF anchor warnings. The final BibTeX log has no warnings.
-- `verify_report.py` passed 115 checks, including fresh metric calculations from saved predictions, exact regeneration checks for numeric report assets, and unchanged hashes for original experiment results and implementation files.
-- The earlier `main.pdf` remained locked, so the verified output is `main_revised.pdf`.
+- Reviewed all 24 freshly rendered pages of `report/FeatureFour_A03_EN3150.pdf` after the final compilation.
+- The title page retains the University of Moratuwa, Feature Four, the repository link, and all four confirmed member names/index numbers.
+- The master four-model comparison is placed on a landscape A4 page and is readable without clipping.
+- The activation estimate, fresh latency-variability table, Pareto plot and representative error panel are legible and referenced from the text.
+- Tables, figures, captions, equations and architecture rows stay within their page margins; no overlap, broken glyphs or unnecessary blank pages were found.
+- The final LaTeX log contains no unresolved references, citation warnings, overfull boxes or underfull boxes. The BibTeX log has no warnings.
+- `scripts.verify_project --require-report` passed 263 checks after the visual review.
+- `report/audit/final_audit.py` passed 84 independent consistency checks and wrote the five-section rubric audit.

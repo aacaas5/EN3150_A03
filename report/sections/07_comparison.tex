@@ -1,15 +1,13 @@
 \section{Final Comparison}
 \label{sec:comparison}
+Table~\ref{tab:master-comparison} places the main accuracy and resource evidence
+in one location. Macro F1 and the weighted metrics in the accompanying CSV were
+recomputed from the saved test predictions; no model was retrained.
+\input{tables/master_comparison}
 \subsection{Accuracy}
-Figure~\ref{fig:final_accuracy} compares all four validation-selected
-checkpoints. Both pretrained models outperform the custom networks on this
-test set. For Model B, the question is whether that improvement justifies
-the additional storage and computation for the intended device.
-\begin{figure}[H]\centering
-\includegraphics[width=0.96\textwidth]{figures/final_accuracy.pdf}
-\caption{Held-out test accuracy using validation-selected checkpoints.}
-\label{fig:final_accuracy}
-\end{figure}
+Both pretrained models outperform the custom networks on this test set. For
+Model B, the question is whether that improvement justifies the additional
+storage and computation for the intended device.
 Relative to MobileNetV2, Model B gives \MobileAccuracyGap{} percentage points
 lower test accuracy; relative to EfficientNet-B0, the difference is
 \EfficientAccuracyGap{} percentage points. These are observed accuracy costs
@@ -24,22 +22,20 @@ MobileNetV2 and \EfficientParams{} for EfficientNet-B0. Model B saves
 feature weights reduces the trainable count but does not remove their storage
 or inference cost.
 \subsection{Memory Footprint}
-Figure~\ref{fig:final_resources} separates parameter count from serialized
-size. Model B occupies \BSizeMiB{} MiB, compared with \MobileSizeMiB{} MiB
+Model B occupies \BSizeMiB{} MiB, compared with \MobileSizeMiB{} MiB
 for MobileNetV2 and \EfficientSizeMiB{} MiB for EfficientNet-B0. These are
 reductions of \MobileStorageSaving\% and \EfficientStorageSaving\%.
 Serialization and buffers explain why byte reductions differ from parameter
 reductions.
-\begin{figure}[H]\centering
-\includegraphics[width=0.96\textwidth]{figures/final_resources.pdf}
-\caption{Parameter counts and measured FP32 state-dictionary sizes.}
-\label{fig:final_resources}
-\end{figure}
-
 Sizes include batch-normalization buffers and serialization overhead but exclude
 optimizer state. KiB and MiB use powers of 1024. The CSV column suffixes
 \texttt{kb/mb} use these binary units. Disk size is not peak inference RAM;
-activation and workspace memory are not measured.
+it does not include every activation, framework allocation or operator
+workspace. Table~\ref{tab:activation-memory} gives a narrower batch-one FP32
+estimate: the largest single leaf-layer output tensor observed by hooks.
+\input{tables/activation_memory}
+All four maxima are 384 KiB, but this equality does not imply equal total peak
+RAM. Lifetimes, residual connections and temporary workspaces are not counted.
 \subsection{Computational Cost}
 Table~\ref{tab:compute} compares one-image arithmetic counts with measured
 CPU latency. Model B uses \MobileMacSaving\% fewer counted MACs than
@@ -60,6 +56,23 @@ In Table~\ref{tab:compute}, Model B takes \BLatency{} ms on average versus
 \ALatency{} ms for Model A despite its lower MAC count. MobileNetV2 and
 EfficientNet-B0 take \MobileLatency{} ms and \EfficientLatency{} ms,
 respectively.
+
+The original timing samples were not saved, so their standard deviations
+cannot be reconstructed. Table~\ref{tab:latency-repeat} is a fresh CPU-only
+repeat using the same checkpoints, input shape, four threads, 20 warm-ups and
+100 timed forwards. It is reported separately because background load and
+software state can change timing. The absolute values differ from the original
+run, but the ordering is unchanged and Model B remains slower than Model A.
+\input{tables/latency_rebenchmark}
+
+Figure~\ref{fig:resource-pareto} combines accuracy with parameter and MAC cost.
+Model B occupies the low-resource corner. MobileNetV2 gives the best accuracy
+and uses fewer counted MACs than Model A, but it needs a much larger checkpoint.
+\begin{figure}[H]\centering
+\includegraphics[width=\textwidth]{figures/accuracy_resource_pareto.pdf}
+\caption{Held-out accuracy against parameters and Conv/Linear MACs. Horizontal axes use logarithmic scales.}
+\label{fig:resource-pareto}
+\end{figure}
 \subsection{Edge Deployment Trade-offs}
 Model B is a reasonable candidate when weight storage is the main constraint
 and its accuracy cost is acceptable. Model A remains competitive when the

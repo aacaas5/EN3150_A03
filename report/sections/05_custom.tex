@@ -41,16 +41,19 @@ at epoch 11, smaller than Model A's largest drop. However, neither run gives
 a monotonic validation improvement, which supports retaining the best
 validation checkpoint rather than using the last epoch automatically.
 \subsection{Test Results}
-Accuracy is the fraction of correct predictions. Precision and recall are
+Accuracy is the fraction of correct predictions. Precision, recall and F1 are
 unweighted macro averages over all ten classes; undefined class precision is
-set to zero. Each selected checkpoint is evaluated on the untouched test set.
+set to zero. Weighted versions are also retained in the machine-readable
+comparison files. Each selected checkpoint is evaluated on the untouched test set.
 For class $c$, let $TP_c$, $FP_c$ and $FN_c$ denote true positives, false
 positives and false negatives. With $C=10$ classes and $N=4050$ test images,
 \begin{equation}
 \begin{aligned}
 \mathrm{Accuracy}&=\frac{\sum_c TP_c}{N},\\
 \mathrm{MacroPrecision}&=\frac{1}{C}\sum_{c=1}^{C}\frac{TP_c}{TP_c+FP_c},\\
-\mathrm{MacroRecall}&=\frac{1}{C}\sum_{c=1}^{C}\frac{TP_c}{TP_c+FN_c}.
+\mathrm{MacroRecall}&=\frac{1}{C}\sum_{c=1}^{C}\frac{TP_c}{TP_c+FN_c},\\
+\mathrm{MacroF1}&=\frac{1}{C}\sum_{c=1}^{C}
+\frac{2P_cR_c}{P_c+R_c}.
 \end{aligned}\label{eq:metrics}
 \end{equation}
 The scikit-learn calculations in Table~\ref{tab:custom_accuracy} follow

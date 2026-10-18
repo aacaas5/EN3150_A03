@@ -17,5 +17,9 @@
   "cpu_latency_ms_median": 1.2197500327602029,
   "cpu_latency_ms_p95": 1.8018700880929819,
   "latency_repeats": 100,
-  "cpu_threads": 4
+  "cpu_threads": 4,
+  "macro_f1": 0.9416738663601517,
+  "weighted_precision": 0.9450831676292863,
+  "weighted_recall": 0.942962962962963,
+  "weighted_f1": 0.9431507523037437
 }

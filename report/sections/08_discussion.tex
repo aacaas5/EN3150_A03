@@ -21,6 +21,17 @@ AnnualCrop images predicted as PermanentCrop
 texture at this resolution, but image-level analysis would be needed to
 establish the causes. The matrices show which errors occur, not why they occur.
 
+Figure~\ref{fig:representative-errors} shows two deterministic examples from
+each of four measured Model A confusion directions. The crop pairs support the
+matrix-level observation that some land-cover textures and long linear features
+can appear similar at $64\times64$. They are examples of recorded errors, not
+evidence that one visual feature caused every error.
+\begin{figure}[H]\centering
+\includegraphics[width=\textwidth]{figures/representative_errors.pdf}
+\caption{Representative Model A test errors selected from four confusion pairs.}
+\label{fig:representative-errors}
+\end{figure}
+
 These are single-seed observations with no confidence intervals or repeated-run
 variance estimate. Small accuracy differences should not be treated as proven
 general advantages. The split is stratified but not geographic; satellite
@@ -30,3 +41,11 @@ the 64x64 input differs from the pretrained recipe. These results are not the
 best attainable performance of the pretrained architectures. The optimizer pilot compares
 three fixed configurations for a short budget; it does not prove universal
 optimizer superiority. No unseen edge device or energy benefit is asserted.
+
+The deployment choice is therefore conditional. Model B is attractive when
+weight storage is severe and a small accuracy loss is acceptable. MobileNetV2
+is preferred when accuracy has priority and several MiB of weights are
+acceptable. EfficientNet-B0 is not preferred here because it is less accurate,
+larger and slower than MobileNetV2 under the tested setup. Before deployment,
+the team would still need target-device peak RAM, quantized accuracy, operator
+support, latency and power measurements.

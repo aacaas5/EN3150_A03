@@ -24,7 +24,10 @@ $\epsilon=10^{-8}$.
 Model B is used for its low compute requirement. Each recipe uses ten epochs,
 batch size 128, identical initial weights, seed, data order and augmentation
 strategy. No weight decay, scheduler or early stopping is used. These are
-controlled recipe comparisons, not exhaustive learning-rate searches.
+controlled practical recipe comparisons, not exhaustive learning-rate searches.
+SGD and momentum SGD share learning rate 0.01, while Adam uses 0.001. The
+experiment therefore supports the selected configuration for this project;
+it is not an identical-learning-rate comparison of optimizer algorithms.
 Table~\ref{tab:optimizers} records settings, best validation performance and
 final validation accuracy; Table~\ref{tab:optimizer_dynamics} adds final losses
 and timing. ``Final'' here means the last pilot epoch, not a test-set result.

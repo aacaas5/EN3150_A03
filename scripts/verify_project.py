@@ -73,14 +73,20 @@ def verify(require_report=False):
     for name, subset in (("custom_models", ["model_a", "model_b"]), ("pretrained_models", ["mobilenet_v2", "efficientnet_b0"])):
         table = pd.read_csv(ROOT / f"results/tables/{name}.csv").set_index("model")
         check(f"{name} consistent with final comparison", table.equals(all_results.loc[subset]))
-    check("No Git repository created", not (ROOT / ".git").exists())
+    check("Expected Git repository present", (ROOT / ".git").exists())
     check("README present", (ROOT / "README.md").exists())
+    for added in ("master_comparison.csv", "activation_memory_estimate.csv",
+                  "cpu_latency_rebenchmark.csv", "representative_errors.csv"):
+        check(f"Safe audit table present: {added}", (ROOT / f"results/tables/{added}").exists())
     if require_report:
         provenance = read_json(ROOT / "report/result_provenance.json")
         for relative, digest in provenance.items():
             check(f"Report source {relative} unchanged", sha256(ROOT / relative) == digest)
-        check("LaTeX source and compiled PDF exist", (ROOT / "report/main.tex").exists() and (ROOT / "report/main.pdf").exists())
-        latex_log = (ROOT / "report/main.log").read_text(errors="replace")
+        final_pdf = ROOT / "report/FeatureFour_A03_EN3150.pdf"
+        final_log = ROOT / "report/FeatureFour_A03_EN3150.log"
+        check("LaTeX source and final-named PDF exist", (ROOT / "report/main.tex").exists() and final_pdf.exists())
+        check("Final self-contained notebook exists", (ROOT / "FeatureFour_A03_EN3150.ipynb").exists())
+        latex_log = final_log.read_text(errors="replace")
         check("No unresolved LaTeX errors or references", "! " not in latex_log and "undefined" not in latex_log.lower() and "Overfull" not in latex_log)
     write_json(ROOT / "results/verification.json", {"passed": True, "report_required": require_report, "checks": checks})
     print(f"PASS: {len(checks)} checks (report={require_report})")

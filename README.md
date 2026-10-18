@@ -75,3 +75,4 @@ The figures show:
 `FeatureFour_A03_EN3150.ipynb` contains the model definitions, optimizer and training functions, evaluation code, resource profiling, learning curves, confusion matrices and final comparison.
 
 Running all cells with the default settings uses Quick Review Mode. It verifies the embedded experiment evidence without downloading data or starting training. Full reproduction is available through the explicit opt-in flags and requires EuroSAT plus the pretrained ImageNet weights.
+
